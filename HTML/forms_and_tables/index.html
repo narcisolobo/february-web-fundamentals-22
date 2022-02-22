@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Tables and CSS, Oh My!</title>
+    <!-- href of link tag is a relative path to the file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Forms and Tables and CSS, Oh My!</h1>
+    <!-- ID'S MUST BE UNIQUE - NOT REPEATED -->
+    <h1 id="different">This one should be different!</h1>
+    <h2><em>Forms are how we get information from the user.</em></h2>
+    <p>Forms consist of form controls (text inputs, drop down menus, etc.) and labels telling the user what each input is for.</p>
+    <p>Forms must start and end with the form tag.</p>
+    <form>
+        <!-- label and text input are default inline elements -->
+        <!-- divs are default block elements -->
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name">
+        </div>
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name">
+        </div>
+        <div>
+            <!-- 
+                All radio buttons will share the same name attribute
+                Each pair of radio and label will share id, value, and for
+            -->
+            <p>What's your favorite cartoon?</p>
+            <!-- classes can be repeated -->
+            <input type="radio" name="cartoon" id="my_hero" value="my_hero">
+            <label class="radio-label" for="my_hero">My Hero Academia</label>
+            <input type="radio" name="cartoon" id="futurama" value="futurama">
+            <label class="radio-label" for="futurama">Futurama</label>
+            <input type="radio" name="cartoon" id="bojack" value="bojack">
+            <label class="radio-label" for="bojack">Bojack Horseman</label>
+            <input type="radio" name="cartoon" id="gumball" value="gumball">
+            <label class="radio-label" for="gumball">The Amazing World of Gumball</label>
+        </div>
+        <div>
+            <label for="city">What's your favorite city?</label>
+            <select name="city" id="city">
+                <option selected disabled hidden>Please select</option>
+                <option value="chicago">Chicago</option>
+                <option value="new_york">New York</option>
+                <option value="los_angeles">Los Angeles</option>
+                <option value="dallas">Dallas</option>
+            </select>
+        </div>
+        <!-- the submit button must be a child of the form -->
+        <input type="submit" value="SUBMIT">
+        <!-- DO NOT DO THE BELOW -->
+        <!-- <button>SUBMIT</button> -->
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Martial Arts Movie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kermit</td>
+                <td>The Frog</td>
+                <td>Game of Death</td>
+            </tr>
+            <tr>
+                <td>Miss</td>
+                <td>Piggy</td>
+                <td>Ong Bak</td>
+            </tr>
+            <tr>
+                <td>Fozzie</td>
+                <td>The Bear</td>
+                <td>Drunken Master</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

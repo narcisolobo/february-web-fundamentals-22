@@ -1,0 +1,30 @@
+/*
+
+Parts of a CSS rule
+
+1. Selector (types: element itself, id of the element, and the class of the element)
+2. Property (what are you changing about the element?)
+3. Value (how are you changing that property?)
+
+*/
+
+h1 {
+  color: deepskyblue;
+  background-color: yellow;
+  padding: 10px;
+  margin: 20px;
+  /* border takes 3 values - width, style, and color */
+  border: 2px solid black;
+}
+
+/* padding pushes children in, and margin pushes siblings away */
+
+/* selecting an ID with a hashtag */
+#different {
+  color: crimson;
+}
+
+/* selecting a class with a dot */
+.radio-label {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
