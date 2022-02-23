@@ -1,0 +1,41 @@
+h1 {
+  color: rebeccapurple;
+}
+
+.box-model {
+  display: inline-block;
+  width: 200px;
+  background-color: darkgoldenrod;
+  /* 1 value - all four sides */
+  /* 2 values - first defines top and bottom, second defines left and right */
+  /* 3 values - first defines top, second defines left and right, third defines bottom */
+  /* 4 values - defines each side in a clockwise manner */
+  padding: 20px 10px 25px 5px;
+  /* padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; */
+  border: 5px dotted red;
+  /* 1 value - all four sides */
+  /* 2 values - first defines top and bottom, second defines left and right */
+  /* 3 values - first defines top, second defines left and right, third defines bottom */
+  /* 4 values - defines each side in a clockwise manner */
+  margin: 10px;
+}
+
+.spacer {
+  background-color: aqua;
+  width: 100px;
+  min-height: 100px;
+  display: inline-block;
+}
+
+/*
+
+FOR THE PLOTTING OUR BLOCKS ASSIGNMENT
+The only properties you'll need are:
+display: inline-block
+vertical-align: top
+padding, margin
+
+*/
