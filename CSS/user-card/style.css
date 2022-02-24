@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 400px;
+  margin: 50px auto;
+  border: 2px solid darkslategray;
+  min-height: 200px;
+}
+
+.header {
+  background-color: #15a2b8;
+  min-height: 50px;
+  position: relative;
+}
+
+.user-circle {
+  position: absolute;
+  width: 50px;
+  top: 25px;
+  left: 25px;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.small {
+  width: 20px;
+}
+
+.card-body {
+  padding: 25px;
+}
