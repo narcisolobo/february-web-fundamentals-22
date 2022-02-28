@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container flex">
+            <h1>DojoWeather</h1>
+            <ul class="flex">
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="main-header flex">
+            <h2>San Jose</h2>
+            <form>
+                <label for="temp-unit">show temperature in</label>
+                <select id="temp-unit" onchange="changeUnit()">
+                    <option value="c">C°</option>
+                    <option value="f">F°</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div class="days flex">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="Some Rain">
+                <p>some rain</p>
+                <div class="highs-and-lows flex">
+                    <p><span class="high">24</span>°</p>
+                    <p><span class="low">18</span>°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="Some Sun">
+                <p>some sun</p>
+                <div class="highs-and-lows flex">
+                    <p><span class="high">27</span>°</p>
+                    <p><span class="low">19</span>°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="Some Clouds">
+                <p>some clouds</p>
+                <div class="highs-and-lows flex">
+                    <p><span class="high">21</span>°</p>
+                    <p><span class="low">16</span>°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="./assets/some_sun.png" alt="Some Sun">
+                <p>some sun</p>
+                <div class="highs-and-lows flex">
+                    <p><span class="high">26</span>°</p>
+                    <p><span class="low">21</span>°</p>
+                </div>
+            </div>
+        </div>
+        <div id="cookieBox" class="cookie flex">
+            <img src="./assets/cookie.png" alt="Cookie">
+            <div class="cookie-copy">
+                <h4>Stop! Cookie Time</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsum aut ut eos molestiae odit? Nesciunt blanditiis sunt voluptatibus autem dolorem, in quasi <a href="#">iste vel...</a></p>
+            </div>
+            <button onclick="remove(cookieBox)">I Accept</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

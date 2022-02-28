@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+/* utilities start */
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+
+/* utilities end */
+
+/* nav start */
+nav {
+  background-color: #9fc5f8;
+  padding: .5em 0;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav h1 {
+  font-size: 2.5em;
+}
+
+/* nav end */
+
+/* main start */
+main {
+  min-height: 400px;
+}
+
+.main-header {
+  padding: 1rem;
+}
+
+.days {
+  padding: 1rem 0 0;
+}
+
+.day {
+  flex: 1;
+  text-align: center;
+  padding: 1em;
+  background-color: #eeeeee;
+}
+
+.day img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.day>*{
+  margin-bottom: 1rem;
+}
+
+.high, .low {
+  font-size: x-large;
+}
+
+.high {
+  color: red;
+}
+
+.low {
+  color: blue;
+}
+
+/* main end */
+
+.cookie {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 800px;
+  background-color: white;
+}
+
+.cookie button {
+  white-space: nowrap;
+  background-color: #9fc5f8;
+  padding: .5em 1em;
+}
