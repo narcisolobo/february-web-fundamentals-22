@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="title">DOM Manipulation</h1>
+    <button onclick="change(heading)">CLICK ME</button><br><br>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name">
+    <button onclick="hello()">Say Hello</button><br><br>
+    <img onmouseover="spidey()" onmouseout="petey()" src="./images/parker.jpeg" alt="Peter Parker" id="peter-parker">
+    <br><br>
+    <select id="city" onchange="populateDiv()">
+        <option value="New York">New York</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Los Angeles">Los Angeles</option>
+    </select>
+    <div id="favorite-city"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
