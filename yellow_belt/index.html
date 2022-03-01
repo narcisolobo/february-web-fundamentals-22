@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,92 @@
     <title>GamingDojo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <!-- header start -->
+    <header class="mb">
         <div class="container flex">
-            <h1>GamingDojo</h1>
+            <h1>Gaming<span class="purple-text">Dojo</span></h1>
             <div class="header-right flex">
                 <select>
                     <option>Euro €</option>
                 </select>
                 <img src="./images/cart-light.png" alt="Shopping Cart">
-                <p>0</p>
+                <p id="itemCount">0</p>
                 <img src="./images/search-light.png" alt="Search">
             </div>
         </div>
     </header>
+    <!-- header end -->
+
     <main class="container">
-        <div class="highlights">
-            <h2>Highlights</h2>
+        <div class="highlights mb">
+            <h2 class="mb">Highlights</h2>
             <div class="carousel flex">
-                <img src="./images/chevron-left.png" alt="Left">
-                <img src="./images/stonepunk.png" alt="Stone Punk">
-                <img class="flipped" src="./images/chevron-left.png" alt="Right">
+                <img onclick="prevPic()" src="./images/chevron-left.png" alt="Left">
+                <img id="banner" class="mb" src="./images/stonepunk.png" alt="Stone Punk">
+                <img onclick="nextPic()" class="flipped" src="./images/chevron-left.png" alt="Right">
+            </div>
+            <div class="indicators flex">
+                <div class="grey-bg indicator"></div>
+                <div class="purple-bg indicator"></div>
+                <div class="grey-bg indicator"></div>
+                <div class="grey-bg indicator"></div>
             </div>
         </div>
         <div class="features flex">
-            <div class="feature"></div>
-            <div class="feature"></div>
-            <div class="feature"></div>
+            <div class="feature">
+                <img class="feature-img" src="./images/cafe-neko.png" alt="Cafe Neko">
+                <div class="feature-copy">
+                    <h2>Cafe Neko: Gold Edition</h2>
+                    <img src="./images/windows.png" alt="Windows" class="os-icon mb">
+                    <img src="./images/apple.png" alt="Apple" class="os-icon mb">
+                    <div class="buy flex">
+                        <button class="btn purple-bg">-20%</button>
+                        <div class="prices">
+                            <p class="old-prices">€14.98</p>
+                            <p class="new-price">€10.49</p>
+                        </div>
+                        <button onclick="buyItem()" class="btn green-bg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <img class="feature-img" src="./images/pixel-ninjas-2.png" alt="Pixel Ninjas 2">
+                <div class="feature-copy">
+                    <h2>Pixel Ninjas 2</h2>
+                    <img src="./images/windows.png" alt="Windows" class="os-icon mb">
+                    <img src="./images/apple.png" alt="Apple" class="os-icon mb">
+                    <div class="buy flex">
+                        <button class="btn purple-bg">-10%</button>
+                        <div class="prices">
+                            <p class="old-prices">€8.19</p>
+                            <p class="new-price">€7.39</p>
+                        </div>
+                        <button onclick="buyItem()" class="btn green-bg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <img class="feature-img" src="./images/stonepunk.png" alt="Stonepunk">
+                <div class="feature-copy">
+                    <h2>Stonepunk 10000 BCE</h2>
+                    <img src="./images/windows.png" alt="Windows" class="os-icon mb">
+                    <img src="./images/apple.png" alt="Apple" class="os-icon mb">
+                    <img onclick="alert('This game is supported on Linux')" src="./images/linux.png" alt="Linux"
+                        class="os-icon mb">
+                    <div class="buy flex">
+                        <button class="btn purple-bg">NEW</button>
+                        <div class="prices align-end">
+                            <p class="new-price">€19.99</p>
+                        </div>
+                        <button onclick="buyItem()" class="btn green-bg">Buy</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./script.js"></script>
 </body>
+
 </html>

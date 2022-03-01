@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+body {
+  background-color: #eeeeee;
 }
 
 /* utilities */
@@ -18,6 +22,33 @@
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
+}
+
+.purple-text {
+  color: #9828ff;
+}
+
+.purple-bg {
+  background-color: #9828ff;
+}
+
+.grey-bg {
+  background-color: #999999;
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  color: white;
+  padding: 1em 0.5em;
+  border: 0;
+  font-size: larger;
 }
 /* utilities */
 
@@ -50,18 +81,58 @@ main {
 .flipped {
   transform: scaleX(-1);
 }
+
+.indicators {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.indicator {
+  min-height: 5px;
+  flex: 1;
+}
 /* highlights styles */
 
 /* features styles */
 .features {
-  background-color: darkturquoise;
+  /* background-color: darkturquoise; */
   min-height: 200px;
 }
 
 .feature {
-  background-color: palegoldenrod;
+  /* background-color: palegoldenrod; */
   min-height: 200px;
   flex: 1;
+  background-color: white;
+}
+
+.feature-img {
+  width: 100%;
+}
+
+.feature-copy {
+  padding: 1rem;
+}
+
+.os-icon {
+  width: 50px;
+}
+
+.align-end {
+  align-self: flex-end;
+}
+
+.prices {
+  text-align: right;
+}
+
+.old-prices {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: x-large;
 }
 
 /* features styles */
