@@ -1,0 +1,28 @@
+In each stack going forward, the end goal will be to build a web app capable of full CRUD.
+
+Create, Read, Update, and Destroy
+Through all three stacks, we will be able to create web apps that create, read, update, and destroy records in the database.
+
+MVC - Model, View, Controller
+
+Python - Flask
+Java - Spring MVC
+C# - dotnet
+JavaScript - MERN (MongoDB, Express.js, React.js, Node.js)
+
+1. Fundamentals of the language
+2. Object oriented programming
+3. Framework
+4. Database
+4. Full CRUD
+5. Login and Register
+6. Belt exam (red/black)
+7. Project week (build a web app based on what you learned)
+
+What can I do to prepare for Python?
+
+1. Basic 13 in JS and Python
+2. SQL (Structured Query Language - SQLZoo https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)
+3. Read first few sections of Python
+4. HTML forms and tables
+5. Get a little familiar with Bootstrap

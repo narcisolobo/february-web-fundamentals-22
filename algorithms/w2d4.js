@@ -91,3 +91,17 @@ console.log the first type of all the pokémon whose second type is "flying"
 Bonus Challenge: console.log the reverse of the names of the pokémon whose only type is "poison"
 
 */
+
+// console.log the pokémon objects whose id is evenly divisible by 3
+for (var i = 0; i < pokémon.length; i++) {
+  if (pokémon[i].id % 3 == 0) {
+    console.log(pokémon[i])
+  }
+}
+
+// console.log the pokémon objects that have more than one type
+for (var i = 0; i < pokémon.length; i++) {
+  if (pokémon[i].id % 3 == 0) {
+    console.log(pokémon[i])
+  }
+}
