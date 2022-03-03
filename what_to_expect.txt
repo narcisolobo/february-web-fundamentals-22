@@ -26,3 +26,5 @@ What can I do to prepare for Python?
 3. Read first few sections of Python
 4. HTML forms and tables
 5. Get a little familiar with Bootstrap
+6. Demystify the terminal - https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html
+7. Demystify Git and Github - https://ohmygit.org/
